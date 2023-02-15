@@ -15,7 +15,7 @@ source = 1      # source node A
 destination = 5 # destination node E
 curr_time = 0   # Current time
 
-contact_plan = cp_load('./py_cgr/contact_plans/cgr_tutorial.txt', 5000)
+contact_plan = cp_load('./contact_plans/cgr_tutorial.txt', 5000)
 print(contact_plan)
 
 # dijkstra returns a single (best) route from contact plan
