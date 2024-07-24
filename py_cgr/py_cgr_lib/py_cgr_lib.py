@@ -231,7 +231,10 @@ def cp_load(file_name, max_contacts=None):
                 continue
 
             fields = contact.split(' ')[2:]  # ignore "a contact"
-            start, end, frm, to, rate, owlt = map(int, fields)
+            # start, end, frm, to, rate, owlt = map(int, fields)
+            start = float(fields[0])
+            end = float(fields[1])
+            frm, to, rate, owlt = map(int, fields[2:])            
             nodes.add(frm)
             nodes.add(to)
             __contact_plan.append(
